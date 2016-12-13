@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Hello World!</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!--The bootstrap class sr-only is for hidden information targeted at screen readers, to allow for accessibility for people with vision problems-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="projectName navbar-brand">
+                    <a href="#">Matt Ward</a>
+                </div>
+                <!--End of project-->
+            </div>
+            <!--End of navbar header -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <!--dropdown menu in the WORK tab-->
+
+                    <!--End of dropdown menu in the WORK tab-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">Skills</a></li>
+                    <li><a href="#most-recent-work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--End of navbar right-->
+            </div>
+            <!--End of navbar collapse-->
+        </div>
+        <!--End of div container fluid-->
+    </nav>
+    <!-- end navbar navbar-inverse navabar-fixed-top -->
+    <div class="container-fluid" id="home">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/hero1.jpg" alt="...">
+                    <div class="carousel-caption1">
+                        <h2>Matt Ward</h2>
+                        <h2>Web Developer</h2>
+                    </div>
+                    <!-- end caption -->
+                </div>
+                <!-- end item active -->
+                <div class="item">
+                    <img src="img/hero2.jpg" alt="...">
+                    <div class="carousel-caption2">
+                        <h2>Progress</h2>
+                        <h2>Every day I'm coding more!</h2>
+                    </div>
+                    <!-- end caption -->
+                </div>
+                <!-- end item -->
+                <div class="item">
+                    <img src="img/hero3.jpg" alt="...">
+                    <div class="carousel-caption3">
+                        <h2>Destination</h2>
+                        <h2>To land my dream job.</h2>
+
+                    </div>
+                    <!-- end caption -->
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end carousel-inner -->
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- end carousel-example-generic-->
+    </div>
+    <!-- end container-fluid home -->
+    <div class="container-fluid anchor" id="about" data-stellar-background-ratio="0.5">
+
+        <div class="container" id="about-text">  
+            <div class="col-lg-6 col-xs-12">
+                <div class="intro-column">
+                    <img class="img-responsive" id="portfolio-pic" src="http://d33wubrfki0l68.cloudfront.net/10453dba0374ed33cee4ec6438bda220669cfad0/e767f/img/familypic.png">
+                </div>  
+            </div>      
+                <div class="col-lg-6 col-xs-12">    
+                    <div class="main-text">
+                        <h3>About Me</h3><h3>
+                        <p>I was born in Las Vegas, NV and have lived there most of my life. I am the youngest of five children. I've been married for three years and have a daughter who is almost two. I enjoy learning, especially about history and older things. I like to listen to podcasts, play card and board games, and geocache.</p></h3>
+                    </div> 
+                    <div class="modal-button">
+                    <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
+                    </div>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Resume</h4>
+                        </div>
+                        <div class="modal-body">
+                            <embed>
+                            <embed id="modalembed" src="resume.pdf">
+                            
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gGdQ4dp2NXA?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>  
+                </div>
+        </div>
+    </div>
+    <!-- end container-fluid about section-->
+
+    <div class="container-fluid anchor" id="faq">
+
+        <div class="row" id="learn-more-header">
+            <div class="header">
+                <h3 class="learn-more">Skills</h3>
+                </div>
+            </div>
+
+            <!-- end header -->
+            <div class="container" id="language-widgets">
+                <!-- Example row of columns -->
+                <div class="row" id="language-images">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div id="logo" title="HTML5-Css3">
+                            <img class="img-responsive" id="language-img" src="img/html5&css3.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div id="logo" title="Javascript">
+                            <img class="img-responsive" id="language-img" src="img/JavaScript.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div id="logo" title="Github">
+                            <img class="img-responsive" id="language-img" src="img/GitHub.jpg" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div id="logo" title="Ruby on Rails">
+                            <img class="img-responsive" id="language-img" src="img/RubyOnRails.jpg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Html 5 & Css 3
+                </a>
+              </h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            I first learned about HTML and CSS just over a year ago. I dove right in to CodeAcademy and Free Code Camp. It fascinated me how I could write something that the browser understood and created what I told it to. Now over a year later I am comfortable in all basics of the two and most intermediate to advanced implications of these languages. Understanding how to create, link, and style pages helped me continue to have fun at times when things were difficult to learn. And it has been rewarding to be able to have Web Sites of my own successfully created and responsive so they can be shown to family and friends right on my mobile device. Now I have the confidence to say things like "I can make that" or "I could figure that out and learn to make it" when I see other Web Sites.
+                        </div>
+                        <!-- end panel-body -->
+                    </div>
+                    <!-- end callapseOne -->
+                </div>
+                <!-- end panel panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                JavaScript
+                </a>
+              </h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            JavaScript looked like a foreign language the first time that I saw it. Lucky for me I have learned a foreign language before. So I knew it would be difficult but with determination and time it can be learned. I am comfortable with linking and using Jquery plugins. Writing simple Javascript in HTMl like the calculator I made using JavaScript's OnClick. From Tooltips, Arrays, Hover effects or using an API I continue to learn more JavaScript every day.
+                        </div>
+                        <!-- end panel-body -->
+                    </div>
+                    <!-- end callapseTwo -->
+                </div>
+                <!-- end panel panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                GitHub
+                </a>
+              </h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            GitHub has become a second homepage on my browser. I have really dug into and used it the last 6 months now. Especially with the ecommerce site that I am working on using Ruby on Rails. I can share code and work on a different branch of a repository as a member of a team. Here is a link to my <a href="https://github.com/mattward0028">GitHub</a>
+                        </div>
+                        <!-- end panel body -->
+                    </div>
+                    <!-- end collapseThree -->
+                </div>
+                <!-- end panel panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Ruby On Rails
+                </a>
+              </h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            When I first got introduced with Ruby on Rails I thought it was magical. It didnt really overwhelm me becuause I was comfortable with Windows Command Prompt. I first learned on a Windows Machine that was quite old and needed alot of work on my part just to get it running. Eventually I upgraded and now have a Mac so I'm comfortable with both operating systems. Most of my experience with Ruby on Rails involves the ecommerce site I have been working on. It has a multiple pages including a functioning email contact form, a database of products, a review and comment system, user sign up and login, an adminstrator login to edit, and a way to take payment.
+                        </div>
+                        <!-- end panel-body -->
+                    </div>
+                    <!-- end collapseFour -->
+                </div>
+                <!-- end panel panel-default -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Currently Studying
+                </a>
+              </h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            Right now I am currently studying a few things. Some of them are Redis, Action Cable updates, and Agile.
+                        </div>
+                        <!-- end panel-body -->
+                    </div>
+                    <!-- end collapseFive -->
+                </div>
+                <!-- end panel panel-default -->
+            </div>
+            <!-- end accordion -->
+
+        </div>
+        <!-- end container-fluid FAQ section-->
+
+        <div class="container anchor work" id="most-recent-work">
+            <div class="most-recent-title">
+                <h3>Projects</h3>
+            </div>
+
+            <div class=”row”>
+
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+
+    <div class="container-fluid anchor" id="contact" data-stellar-background-ratio="0.5">
+        <div class="row" id="contact-content">
+            <div class="col-md-12" id="form-group-content">
+                <h3>Say Hello</h3>
+                <form name="myForm" action="thank-you.html">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <label for="name">* Your Name</label>
+                                <input class="form-control" placeholder="Enter name" type="text" id="name" name="name" required="required">
+                                <p id="visible-name"></p>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <label for="phone">Your Phone</label>
+                                <input class="form-control" placeholder="Enter your phone" type="tel" name="phone" id="phone">
+                                <p id="visible-phone"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">* Your Email</label>
+                        <input class="form-control" placeholder="Enter email" type="email" id="email" name="email" required="required">
+                        <p id="visible-email"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">* Your Message</label>
+                        <textarea placeholder="Your message here" class="message-box form-control" cols="40" rows="5" min-length="20" style="resize:none" id="message" name="message" minlength="20" required="required"></textarea>
+                        <p id="visible-comment"></p>
+                        <p id="char-count"></p>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="button" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row" id="map-widgets">
+            <div class="col-md-6">
+
+                <div class="row" id="contact-invite">
+                    <div class="col-md-12 col-xs-12">
+                        <h3>I constantly check my Email<br> It shouldn't take long to hear back from me.</h3>
+                    </div>
+                </div>
+                <!-- end contact invite -->
+                <div class="twitter col-md-6 col-xs-12">
+                    <a href="https://twitter.com/GUAC0028" class="twitter-follow-button" data-show-count="false">Follow @GUAC0028</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="fb col-md-6 col-xs-12">
+                    <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fmatthew.ward.33483903&width=133&height=21&layout=button_count&size=large&show_faces=false&appId" width="133" height="26" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div id="map">
+                    <iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJp28VtiGTyIAR6J7bqvSiOmk&key=AIzaSyDRk4pUKBHtn0vcUuBj2jqbtIyf03MVjsA" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end container-fluid contact section-->
+
+    <footer>
+        <div class="row" id="footer-tags">
+
+            <div class="copyright col-md-12 col-xs-12">
+                <p> &copyMattWard2016 </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================= -->
+    <!-- All your JavaScript comes now -->
+
+    <!-- ============================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Can place script tags with JavaScript files here -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/work.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+        function validate() {
+
+            if (document.myForm.message.value == "") {
+                alert("Message must not be blank");
+                document.myForm.message.focus();
+                return false;
+            }
+
+            return (true);
+        }
+    </script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlxBTQgooVRGEVdeEejA7K_EMKBAdEyA8&callback=initMap" async defer>
+    </script>
+    </script>
+</body>
+
+</html>
